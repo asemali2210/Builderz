@@ -1,0 +1,1059 @@
+/* 🔘🔘🔘🔘🔘🔘🔘🔘🔘 Lato font 🔘🔘🔘🔘🔘🔘🔘🔘🔘 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700&display=swap');
+
+/* setup  */
+$s5: 5px;
+$s10: 10px;
+$s15: 15px;
+$s20: 20px;
+$s25: 25px;
+$s30: 30px;
+$s35: 35px;
+$s40: 40px;
+$s45: 45px;
+$s50: 50px;
+$mg-section: 80px 0 0 0;
+$lato: 'Lato',ans-serif;
+$bk: #000;
+$wh: #fff;
+$dm:#030f27;
+$yl:#fdbe33;
+$pclr:#666666;
+
+
+
+/* 🔘🔘🔘🔘🔘🔘🔘🔘🔘 style common element 🔘🔘🔘🔘🔘🔘🔘🔘🔘*/
+.btn {
+    border-radius: 0;
+
+    &:focus {
+        box-shadow: none
+    }
+}
+
+.bt-bg-yl {
+    color: $wh;
+    border: 2px solid $wh;
+    font-weight: 600;
+    font-size: 20px;
+
+    &:hover {
+        background-color: $yl;
+        border-color: $yl;
+        color: $bk;
+    }
+}
+
+.bt-bg-dm {
+    color: $wh;
+    border: 2px solid $wh;
+    font-weight: 600;
+    font-size: 20px;
+
+    &:hover {
+        background-color: $dm;
+        border-color: $dm;
+        color: $yl;
+    }
+}
+
+.bg-yl {
+    background-color: $yl;
+}
+.bg-dm {
+    background-color: $dm;
+}
+
+.top-bar {
+    padding: $s15 0;
+
+    .top-bar-logo {
+        h2 {
+            font-size: 60px;
+            font-weight: 900;
+            color: $dm;
+            margin: 0;
+        }
+    }
+
+    .top-bar-info {
+        .fa {
+            font-size: 35px;
+            font-weight: 100;
+            margin-right: $s15;
+        }
+        strong {
+            font-weight: 500;
+        }
+        small {
+            font-weight: 400;
+        }
+    }
+}
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 ============= main header pages ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.header-pages{
+    height: 40vh;
+    background-color: $yl;
+    .page-name{
+        font-weight: 700;
+        margin-bottom: $s25;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 70%;
+            background-color: $dm;
+            height: 2px;
+            top: 160%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    .custom-breadcrumb{
+        ol.breadcrumb{
+            background: none;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            list-style: none;
+            border-radius: .25rem;
+            li{
+                a{
+                    color: $dm;
+                    font-size: 24px;
+                    transition: .4s;
+                    &:hover{
+                        color: $wh;
+                    }
+                }
+                &::before{
+                    font-size: 24px;
+                }
+                &.active{
+                    font-size: 24px;
+                    color: rgb(133, 133, 133);
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end header pages =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 ============= main project ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.main-project {
+    position: relative;
+    overflow: hidden;
+    margin-top: $s25;
+    .content-on-hover {
+        position: absolute;
+        top: 0;
+        padding: $s25;
+        background-color: #030f27a4;
+        height: 100%;
+        z-index: 2;
+        color: $wh;
+        font-size: 20px;
+    }
+
+    img {
+        position: relative;
+        object-fit: cover;
+        height: 350px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .project-name {
+        position: relative;
+        z-index: 3;
+
+        h4 {
+            color: $wh;
+            margin: 0;
+            padding-left: 15px;
+            color: $yl;
+            font-size: 20px;
+        }
+
+        button {
+            padding: $s15;
+            height: 100%;
+            width: 15%;
+
+            i {
+                color: $wh;
+                font-size: 25px;
+            }
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end main project =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 ============= home ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.home {
+    .home-carsoul {
+        position: relative;
+
+        .img-overlay {
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #000;
+                opacity: .3;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        .carousel-caption {
+            top: 50%;
+            left: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+
+            h3 {
+                position: relative;
+                font-size: 60px;
+                font-weight: 600;
+                color: $wh;
+            }
+
+            p {
+                position: relative;
+                font-size: 35px;
+            }
+
+            button {
+                position: relative;
+                padding: $s10 $s25;
+                margin: $s20 0;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .img-overlay {
+                img {
+                    height: calc(100vh - 150px);
+                    object-fit: cover;
+                }
+            }
+
+            .carousel-caption {
+                h3 {
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+
+                button {
+                    padding: $s5 $s15;
+                }
+            }
+        }
+    }
+
+    .home-features {
+        .container-fluid {
+            padding: 0;
+            overflow: hidden;
+        }
+        .col-md-4, .col-lg-4 {
+            padding-right: 0;
+            padding-left: 0;
+            overflow: hidden;
+        }
+
+        .feature {
+            padding: $s40;
+
+            &.bg-yl {
+                color: $dm;
+
+                h4 {
+                    color: $dm
+                }
+
+                .feature-icon {
+                    background-color: $yl;
+                }
+            }
+
+            &.bg-dm {
+                color: $yl;
+
+                h4 {
+                    color: $yl
+                }
+
+                .feature-icon {
+                    background-color: $dm;
+                }
+            }
+
+            .feature-icon {
+                font-size: 60px;
+            }
+
+            .content {
+                margin: $s30;
+
+                h4 {
+                    font-size: 30px;
+                    margin-bottom: $s10;
+                }
+
+            }
+        }
+    }
+    .home-video {
+        background: url("./img/carousel-1.jpg") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: $mg-section;
+        overflow: hidden;
+        position: relative;
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .overlay {
+            height: 70vh;
+            width: 100%;
+            background: #030f27a8;
+
+            button {
+                position: relative;
+                font-size: 35px;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                z-index: 2;
+
+                span {
+                    background: $yl;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+    .home-testimonials { 
+        background: url("./img/carousel-1.jpg") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: $mg-section;
+        overflow: hidden;
+        position: relative;
+        height: 80vh;
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background: #030f27a8;
+        }
+
+        .home-custom-slick {
+            .testimonial-item {
+                padding: $s50;
+                height: auto;
+                margin: $s10;
+                row-gap: $s20;
+
+                img {
+                    border-radius: 50%;
+                    max-width: 130px;
+                }
+                .name{
+                    color: $yl;
+                    font-size: 32px;
+                    font-weight: 700;
+                    margin:0;
+                }
+                p {
+                    color: rgb(206, 206, 206);
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+
+                .fa {
+                    color: $yl;
+                    font-size: 50px;
+                }
+                @media only screen and (max-width: 768px) {
+                    img {
+                        border-radius: 50%;
+                        max-width: 90px;
+                    }
+                    .name{
+                        font-size: 28px;
+                    }
+                    .fa{
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end home =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 ============= navbar ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.mynavbar {
+    z-index: 1000;
+    nav {
+        padding: $s15;
+        .nav-toggler {
+            span {
+                color: $wh;
+                font-size: 23px;
+            }
+
+            button {
+                border: 1px solid $pclr;
+
+                .nav-icon {
+                    color: $wh;
+                }
+            }
+        }
+
+        .nav-links {
+            .nav-li {
+                margin-right: $s10;
+
+                a {
+                    color: $wh;
+                    font-size: 23px;
+                    font-weight: 400;
+                    font-family: $lato;
+
+                    &:hover {
+                        color: $yl;
+                    }
+                }
+
+                .nav-item-active {
+                    color: $yl;
+                }
+
+                .dropdown {
+                    padding: .5rem;
+
+                    .nav-dropdown-btn {
+                        background: none;
+                        border: none;
+                        font-size: 20px;
+                        font-weight: 400;
+                        padding: 0;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+
+                    .dropdown-menu {
+                        padding: 0;
+                        border-radius: 0;
+                        border: none;
+                        box-shadow: 5px 5px 15px #ccc;
+
+                        a {
+                            color: $bk;
+
+                            &:hover {
+                                background: $yl;
+                                transition: .5s all;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .nav-btn {
+            padding: $s10 $s15;
+            a{
+                color: $wh;
+                &:hover{
+                    color: $dm;
+                }
+            }
+        }
+    }
+    &.nav-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        .container-fluid {
+            padding: 0;
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end navbar =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 ============= about page ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.main-about{
+    .page-about {
+        margin: $mg-section;
+        .content {
+            .h4 {
+                color: $yl;
+            }
+    
+            .h1 {
+                font-weight: bold;
+                font-size: 55px;
+            }
+    
+            button {
+                border: none;
+                color: $dm;
+                padding: $s10 $s25;
+    
+                &:hover {
+                    color: $wh;
+                }
+            }
+        }
+    
+        .about-img {
+            img {
+                padding: $s20;
+            }
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end about page =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 ============= page counter ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.home-counter  {
+    margin: $mg-section;
+    overflow: hidden;
+    .col-lg-6{
+        padding: 0;
+    }
+    .bg-yl {
+        color: $dm;
+    }
+
+    .bg-dm {
+        color: $yl;
+
+    }
+
+    .col-md-6 {
+        padding: 0;
+    }
+
+    .fact {
+        padding: $s50 $s15;
+
+        .icon {
+            font-size: 40px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .fact-content {
+            margin: $s20;
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end page counter =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 =============  service ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.service {
+    margin: $mg-section;
+    overflow: hidden;
+    .sercive-heading {
+        margin: $s50 0;
+        .h2 {
+            font-size: 48px;
+            font-weight: 900;
+        }
+        .h3 {
+            color: $yl;
+            font-size: 24px;
+        }
+    }
+}
+
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end  service=============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 ============= page projects ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.page-projects {
+    margin: $mg-section;
+    overflow: hidden;
+    .projects-heading {
+        margin: $s50 0;
+        .h2 {
+            font-size: 48px;
+            font-weight: 900;
+        }
+        .h3 {
+            color: $yl;
+            font-size: 24px;
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end page projects =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 ============= page contact ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.page-contact{
+    .contact-form {
+        margin: $mg-section;
+        overflow: hidden;
+        .contact-form-heading {
+            margin: $s50 0;
+            .h2 {
+                font-size: 48px;
+                font-weight: 900;
+            }
+            .h3 {
+                color: $yl;
+                font-size: 24px;
+            }
+        }
+        .get-in-touch{
+            
+            .col-md-6{
+                padding: 0;
+            }
+            .details{
+                padding: 15px;
+                .data-col{
+                    padding: 25px;
+                    border: 1px solid #ffffff33;
+                    margin: 10px;
+                    i.fa{
+                        color: $yl;
+                        font-size: 50px;
+                        padding: 15px;
+                        margin-right: 15px;
+                    }
+                    .data-heading{
+
+                        h4{
+                            color: $yl;
+                            
+                        }
+                        h5{
+                            color: $wh;
+                            
+                        }
+                    }
+                }
+            }
+            .form-controler{
+                background-color: $yl;
+                padding: 12px 15px;
+                height: 100%;
+                .input-form{
+                    border: 1px solid #fff7f7b2;
+                    margin: 10px;
+                    margin-left: 0;
+                    padding: 8px 10px;
+                    width: 100%;
+                    background: $yl;
+                    &:focus{
+                        outline: 0;
+                    }
+                    &::placeholder{
+                        color: $wh;
+                        font-size: 17px;
+                        letter-spacing: 2px;
+                    }
+                }
+                textarea{
+                    border: 1px solid #fff7f7b2;
+                    width: 100%;
+                    background: $yl;
+                    padding: 8px 10px;
+                    height: 200px;
+                    resize: none;
+                    &:focus{
+                        outline: 0;
+                    }
+                    &::placeholder{
+                        color: $wh;
+                        font-size: 17px;
+                        letter-spacing: 2px;
+                    }
+                }
+                button.btn{
+                    background-color: $dm;
+                    color: $wh;
+                    padding: 15px;
+                    margin: 10px 0;
+                    &:hover{
+                        background-color: $wh;
+                        color: $dm;
+                        transition: 0.3s all;
+                    }
+                }
+            }
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end page contact =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 ============= page team ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.team-items {
+    margin: $mg-section;
+    overflow: hidden;
+    .team-item {
+        position: relative;
+        margin-bottom: $s20;
+
+        .team-info {
+            transition: all .7s;
+            background-color: $dm;
+            padding: $s10;
+
+            h3 {
+                transition: all .7s;
+                color: $yl;
+                font-weight: 400;
+            }
+
+            h5 {
+                color: $wh;
+                font-weight: 400;
+            }
+
+            &.active {
+                background-color: $yl;
+
+                h3 {
+                    color: $dm;
+
+                    transform: scaleX(1.1)
+                }
+            }
+        }
+
+        .on-hover {
+            position: absolute;
+            top: 0;
+            left: 15px;
+            overflow: hidden;
+
+            a {
+                color: $wh;
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+            }
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end page team =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 ============= page accodion ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.page-accodion {
+    position: relative;
+    margin: $mg-section;
+
+    .panel {
+        border: 1px solid #d3d2d2;
+        cursor: pointer;
+        overflow: hidden;
+        margin: $s10 0;
+
+        .header {
+            padding: $s10;
+
+            h4 {
+                margin: 0;
+                font-weight: 300;
+                font-size: 24px;
+            }
+
+            &.active {
+                background-color: $yl;
+                transition: all 0.7s;
+
+            }
+        }
+
+        .text {
+            padding: $s10;
+        }
+    }
+
+    &::before {
+        content: "";
+        width: 1.5px;
+        height: 100%;
+        background-color: $yl;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        @media only screen and (max-width: 768px){
+            display: none;
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end page accodion =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 ============= page-latest-blog ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.page-latest-blog {
+    .header {
+        margin: $mg-section;
+        h5 {
+            color: $yl;
+        }
+        h2 {
+            font-size: 45px;
+            margin-bottom: $s50;
+            font-weight: 900;
+            color: $dm;
+        }
+    }
+    .blog {
+        .plus {
+            position: relative;
+            h4 {
+                color: $wh;
+                padding: 10px;
+                font-size: 18px;
+            }
+            .btn {
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 55px;
+            }
+        }
+        .content {
+            .auth {
+                position: relative;
+                font-style: italic;
+                font-size: 18px;
+                font-weight: 400;
+                margin: $s20;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 150%;
+                    width: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 1px;
+                    background: $yl;
+                }
+            }
+            p {
+                padding: $s15;
+                color: $pclr;
+                font-size: 20px;
+            }
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end page latest blog =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 =============  footer ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.main-footer {
+    padding: $s50;
+    margin: $mg-section;
+    .footer-col {
+        .list-name {
+            position: relative;
+            color: $yl;
+            margin-bottom: $s40;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 150%;
+                left: 0;
+                width: 50%;
+                background-color: $yl;
+                height: 2px;
+            }
+        }
+        .footer-item {
+            margin: $s20 0;
+            h4,
+            .fa,
+            a,
+            p {
+                color: $wh;
+            }
+            h4 {
+                font-size: 20px;
+                font-weight: 400;
+                margin: 0;
+                margin-left: $s10;
+            }
+            a {
+                margin-left: $s10;
+                font-size: 20px;
+                font-weight: 400;
+            }
+            p {
+                font-size: 19px;
+            }
+            .footer-input {
+                border: none;
+                padding: $s10 $s20;
+                &:focus{
+                    outline: 0;
+                }
+            }
+
+            .btn {
+                border: 1px solid $yl;
+                background-color: $yl;
+                &:hover {
+                    background-color: $yl;
+                    transition: .2s;
+                }
+            }
+
+            &:hover {
+                a {
+                    transition: .5s;
+                    color: $yl;
+                    letter-spacing: 1px;
+                    transform-origin: left;
+                }
+
+                .fa {
+                    color: $yl;
+                    transition: all .5s;
+                }
+            }
+        }
+
+        .social-links {
+            margin: $s50 0;
+
+            a {
+                margin-left: 0;
+                color: $wh;
+                
+            }
+            }
+
+            .fab {
+                border: 1px solid $wh;
+                padding: $s10;
+                border-radius: 50%;
+                font-size: 16px;
+                margin-left: 2px;
+                &:hover{
+                    color: $dm;
+                    background: $yl;
+                    border-color: $yl;;
+                }
+            }
+    }
+
+    .footer-center {
+        border-top: 1px solid $pclr;
+        border-bottom: 1px solid $pclr;
+        padding: 10px;
+        a {
+            color: $wh;
+            border-right: 1px solid $pclr;
+            padding: 0 $s10;
+            font-size: 20px;
+            &:last-of-type {
+                border: none;
+            }
+        }
+    }
+
+    .footer-bottom {
+        a {
+            color: $yl;
+            font-size: 22px;
+        }
+
+        p {
+            color: $wh;
+            font-size: 22px;
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end  footer =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 ============= team page ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.team{
+    .team-heading{
+        margin: $mg-section;
+        h5{
+            color: $yl;
+            font-size: 24px;
+        }
+        h4{
+            font-weight: 900;
+            font-size: 48px;
+            color: $dm;
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end team page =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
+
+/* 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 =============  custom-ant-modal ============= 👇🏽👇🏽👇🏽👇🏽👇🏽🟢🟢🟢 */
+.home-custom-ant-modal {
+    height: calc(100vh - 100px);
+
+    .ant-btn:hover {
+        color: $yl;
+        border-color: $yl;
+    }
+    .ant-btn-primary {
+        background-color: $yl;
+        border: none;
+        &:hover {
+            color: $wh;
+        }
+    }
+
+}
+
+.home-custom-modal-bs {
+    .modal-content {
+        background: none;
+        border: none;
+    }
+    .carousel-img {
+        width: 100%;
+        border: 5px solid $wh;
+    }
+    .modal-control {
+        background-color: $wh;
+        padding: 10px;
+        button {
+            background: $yl;
+        }
+    }
+}
+/* 👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴 =============  end custom ant modal =============  👆🏽👆🏽👆🏽👆🏽👆🏽🔴🔴  */
